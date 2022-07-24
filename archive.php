@@ -4,6 +4,7 @@
         <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('/images/ocean.jpg')?>);"></div>
         <div class="page-banner__content container container--narrow">
             <h1 class="page-banner__title">
+                <!-- The archive title get all the blog title automatically. -->
                 <?php the_archive_title(); ?>
             
             </h1>
