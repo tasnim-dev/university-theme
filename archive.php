@@ -9,6 +9,7 @@
             
             </h1>
             <div class="page-banner__intro">
+                <!-- The archive description represent the blog description. -->
                 <p><?php the_archive_description(); ?></p>
             </div>
         </div>
