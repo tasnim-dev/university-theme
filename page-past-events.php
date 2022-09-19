@@ -33,7 +33,7 @@
            )
          ) 
         ));
-
+               
         while($pastEvents->have_posts()){
          $pastEvents->the_post(); ?>
                   <div class="event-summary">

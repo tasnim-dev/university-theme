@@ -19,6 +19,12 @@
 
 
     function university_adjust_queries($query){
+       if(! is_admin() AND is_post_type_archive('program') AND is_main_query() ){
+            
+       }
+       
+       
+       
         if(!is_admin() AND is_post_type_archive('events') AND $query->is_main_query() ){
             $today = date('Ymd');
             $query-> set('meta_key','event_date');
