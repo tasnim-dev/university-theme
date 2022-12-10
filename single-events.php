@@ -26,6 +26,20 @@
         <div class="generic-content">
             <?php the_content(); ?>
         </div>
+
+//How to disply relationship at Front-End
+
+    <?php 
+
+        $relatedPrograms = get_field('related_programs');
+       
+        foreach($relatedPrograms as $program){ ?>
+            <li><a><?php echo get_the_title();?></a></li>
+
+        <?php }
+    
+    ?>
+
     </div>
 
  <?php 
